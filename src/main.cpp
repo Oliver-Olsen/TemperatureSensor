@@ -42,7 +42,7 @@ void loop() {
   // Delay added to reduce number print-outs
 
   
-  
+  // The sensor can output data once per second
   delay(1000);
 
 }
