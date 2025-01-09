@@ -4,9 +4,11 @@
 // 9a.  The LM 35 DZ Sensor has a conversion formula: tempInCelcius = /(v_out-0.5)*100. The v_out = (analog_read)*((voltage_in)/1024)
 // The -0.5 is due to the sensor's ability to read negative temps. Therefor an offset is needed.
 
-// 9b   
-// 9c   The write() sends a raw byte
-
+// 9b   It prints out 0 deg c, 2 deg c, 4 deg c and 6 deg c.
+// 9c   The write() sends a raw byte. The print() will try to send the ASSCII version of the number
+// 9d   Can be read in the monitor. ()is calclated in the func voltConverter.
+// 9e   Can also be read in the monitor. It is a result of the calculated voltage.
+// 9f   Watch the attached video in the folder.
 #include <Arduino.h>
 #define TEMPPIN A0
 #define INPUTVOLTAGE 5.0
